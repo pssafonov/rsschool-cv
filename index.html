@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Pavel Safonov | CV</title>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Pavel Safonov</h1>
+    <img src="./img/cv_photo.jpg" width="350" height="350" alt="cv_photo">
+    <ul>
+      <li>Email: p.s.safonov@gmail.com</li>
+      <li>Telegram: @Pavel_Safonov</li>
+      <li>GitHub: <a href="https://github.com/pssafonov">pssafonov</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h3>SUMMARY</h3>
+    <p>Enthusiastic, highly-motivated student with proven leadership capabilities, who likes to take initiative and seek
+      out new challenges. My goal is to learn basic principles of front-end development and apply it in future
+      projects.</p>
+  </section>
+
+  <section>
+    <h3>EMPLOYMENT HISTORY</h3>
+    <p>Jan. 2015 – Present | <b>Senior project manager at InText</b></p>
+    <br>
+    <p>Key responsibilities:</p>
+    <ul>
+      <li>Calculate costs of DTP tasks.</li>
+      <li>Take care of DTP planning and task assignment.</li>
+      <li>Support PM on DTP related questions.</li>
+      <li>Carry out DTP tasks (file preparation, final layout check and DTP revision tasks).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>EDUCATION</h3>
+    <p>2007 - 2012 | <b>Master’s Degree in Civil Engineering</b> - Dnipro National University of Rail Transport</p>
+    <p>2014 - 2015 | <b>JavaScript Fundamentals</b> - Maxymiser Academy</p>
+  </section>
+
+  <section>
+    <h3>SKILLS</h3>
+    <ul>
+      <li>InDesign</li>
+      <li>FrameMaker</li>
+      <li>JavaScript (Basic)</li>
+      <li>HTML (Basic)</li>
+      <li>CSS (Basic)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>CODE EXAMPLES</h3>
+    <pre><code>
+    function translate(stringName, vars){
+      let object = JSON.parse(fs.readFileSync(`./locals/ru.json`, 'utf8'));
+      let string = object[stringName];
+
+      for (let variable in vars){
+        if(!vars.hasOwnProperty(variable)){
+          break;
+        }
+        string = string.replace(`$${variable}`, vars[variable]);
+      }
+      return string;
+    }
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>ENGLISH</h3>
+    <p>English level: Intermediate (B1)</p>
+  </section>
+
+  <footer>
+
+  </footer>
+
+</div>
+
+</body>
+</html>
